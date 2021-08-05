@@ -1,0 +1,29 @@
+header{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5rem;
+    background-color: hsl(180, 29%, 50%);
+    .bg-mobile{
+        width: 100%;
+        height: 150px;
+
+    }
+    .bg-desktop{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width:850px) {
+    header{
+        .bg-mobile{
+            display: none;
+        }
+        .bg-desktop{
+            display: inline-block;
+            width: 100%;
+            height: 150px;
+        }
+    }
+    
+}
